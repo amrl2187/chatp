@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #160f6ce1;
+}
+
+.navbar {
+    background-color: #5416e3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar select,
+.navbar .search-bar input,
+.navbar .search-bar button {
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.navbar .search-bar button {
+    background-color: #a1c309;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .search-bar button:hover {
+    background-color: #e68a00;
+}
+
+.navbar .user-options button {
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;         
+    border: none;
+    outline: none;
+    background-color: #37475a;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .user-options button:hover {
+    background-color: #485769;
+}
+
+#hero-section {
+    background-color: #1ea8a6;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero-section h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product {
+    background-color: rgb(244, 241, 246);
+    border: 1px solid #6170e2;
+    padding: 10px;
+    width: calc(15.333% - 20px);
+    box-shadow: 0 2px 5px rgba(124, 74, 74, 0.1);
+    border-radius: 60px;
+    text-align: center;
+}
+
+.product img {
+    width: 45%;  /* Cambio de 100% a 50% */
+    height: auto;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007eb9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product a:hover {
+    background-color: #005f8b;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007eb9;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination a button:hover {
+    background-color: #005f8b;
+}
+
+/* Estilos para el ícono y la ventana del chatbot */
+#chatbotIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007eb9;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#chatbotModal {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#chatbotHeader {
+    background-color: #007eb9;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#chatbotBody {
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.chatbotMessage {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.chatbotMessage.user {
+    background-color: #e7e7e7;
+    text-align: right;
+}
+
+.chatbotMessage.bot {
+    background-color: #007eb9;
+    color: white;
+}
+
+#chatbotInput {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-top: 1px solid #ddd;
+    outline: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Estilos para las opciones del chatbot */
+.chatbotOption {
+    background-color: #e7e7e7;
+    color: #333;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    text-align:left;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chatbotOption:hover {
+    background-color: #ddd;
+}

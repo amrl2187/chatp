@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo 1 - Conection</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Conection</h1>
+            </div>
+            <div class="search-bar">
+                <select id="storeSelect">
+                    <option value="all">Todas las Tiendas</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="aliexpress">AliExpress</option>
+                    <option value="joytec">JoyTec</option>
+                    <option value="paytec">PayTec</option>
+                    <option value="loltec">loltec</option>
+                    <option value="bestbuy">bestbuy</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+                <button onclick="searchProducts()">Buscar</button>
+            </div>
+            <div class="user-options">
+                <button id="helpButton">Ayuda</button>
+                <button id="infoButton">Información</button>
+                <button id="otherButton1">Otro Botón 1</button>
+                <button id="otherButton2">Otro Botón 2</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero-section">
+            <h2>Bienvenidos a Conection</h2>
+            <p>Todas tus tiendas a un solo Click</p>
+        </section>
+        <section id="productsContainer"></section>
+        <div class="pagination">
+            <a href="catalogo2.html"><button>Página 2</button></a>
+        </div>
+    </main>
+    <div id="chatbotIcon" onclick="toggleChatbot()">🤖</div>
+    <div id="chatbotModal">
+        <div id="chatbotHeader">Chatbot</div>
+        <div id="chatbotBody">
+            <p>Selecciona una pregunta:</p>
+            <button class="chatbotOption" onclick="selectQuestion('¿Cuál es el horario de atención?')">¿Cuál es el horario de atención?</button>
+            <button class="chatbotOption" onclick="selectQuestion('¿Dónde están ubicados?')">¿Dónde están ubicados?</button>
+            <button class="chatbotOption" onclick="selectQuestion('¿Cómo puedo hacer una devolución?')">¿Cómo puedo hacer una devolución?</button>
+            <button class="chatbotOption" onclick="selectQuestion('¿Ofrecen envíos internacionales?')">¿Ofrecen envíos internacionales?</button>
+            <button class="chatbotOption" onclick="selectQuestion('¿Puedo pagar con tarjeta de crédito?')">¿Puedo pagar con tarjeta de crédito?</button>
+        </div>
+        <input type="text" id="chatbotInput" placeholder="Escribe tu mensaje..." onkeypress="handleKeyPress(event)">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
